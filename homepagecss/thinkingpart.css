@@ -1,0 +1,146 @@
+.thinking-part {
+    position: relative;
+    background-color: cornsilk;
+    margin-top: 100px
+}
+
+.think-part-container {
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.thinking {
+    margin-top: 200px;
+    margin-left: 300px;
+    animation-name: right;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+
+.png-txt {
+    position: absolute;
+    top: 0px;
+    right: 450px;
+    animation-name: moveleft;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.rightpart-think {
+    width: 50%;
+}
+
+.leftpart-think {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.text-think-doyou {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.arrow {
+    margin-top: 100px;
+    animation-name: down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes right {
+    0% {
+        opacity: 0;
+        transform: translate(150px);
+    }
+
+}
+
+@keyframes down {
+    0% {}
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes moveleft {
+    0% {
+        opacity: 0;
+        transform: translate(-150px);
+    }
+
+}
+
+/* for small screen  */
+@media screen and (max-width:600px) {
+    .thinking-part {
+        position: relative;
+        background-color: cornsilk;
+        margin-top: 100px
+    }
+
+    .think-part-container {
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .thinking {
+        margin-top: 70px;
+        margin-left: 50px;
+        animation-name: right;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        height: 200px;
+        width: 150px;
+
+    }
+
+
+    .png-txt {
+        position: absolute;
+        top: 0px;
+        right: 70px;
+        animation-name: moveleft;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        height: 150px;
+        width: 150px;
+
+    }
+
+    .rightpart-think {
+        width: 50%;
+    }
+
+    .leftpart-think {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .text-think-doyou {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .arrow {
+        font-size: 30px;
+        margin-top: 50px;
+        animation-name: down;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+    }
+
+}

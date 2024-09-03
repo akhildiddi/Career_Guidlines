@@ -1,0 +1,253 @@
+ /* variables */
+ :root {
+     --clr-primary: #3777aa;
+     --clr-white: white;
+     --clr-red: red;
+     --clr-gray: gray;
+     --clr-light-gray: lightgray;
+     --clr-black: black;
+     --font-family-primary: 'Times New Roman', serif;
+     --font-family: garamond, serif;
+     --radius: 5px;
+     --lavendercolor: rgb(230, 230, 250);
+     --transition: all .3s linear;
+
+ }
+
+ body {
+     background-color: var(--clr-white);
+ }
+
+ /* global classes */
+ *,
+ ::after,
+ ::before {
+     box-sizing: border-box;
+     text-decoration: none;
+     margin: 0px;
+     padding: 0px;
+ }
+
+ *:focus {
+     outline: black solid 2px;
+ }
+
+ ul {
+     list-style-type: none;
+ }
+
+ .contain {
+     width: 100%;
+     height: 100%;
+ }
+
+ .wrapper {
+     width: 100%;
+     height: 100%;
+     max-width: 1400px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+
+ .text-container {
+     max-width: 1200px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: justify;
+ }
+
+ /* global styles */
+ .display-block {
+     display: block !important;
+ }
+
+ .bg-color-primary {
+     background-color: #3777aa;
+ }
+
+ .bg-color-lav {
+     background-color: var(--lavendercolor);
+ }
+
+ .bg-color-gray {
+     background-color: var(--clr-gray);
+ }
+
+ .bg-color-lightgray {
+     background-color: var(--clr-light-gray);
+ }
+
+ .bg-color-skyblue {
+     background-color: rgb(135, 206, 235);
+ }
+
+ .bg-color-lightpink {
+     background-color: rgb(255, 192, 203);
+ }
+
+ .head-title {
+     font-family: var(--font-family-primary);
+ }
+
+ .title-primary {
+     color: var(--clr-primary);
+     text-transform: uppercase;
+     max-width: 1400px;
+     width: 100%;
+     text-align: center;
+     padding-top: 10px;
+     padding-bottom: 10px;
+
+ }
+
+ .line {
+     width: 60px;
+     height: 4px;
+     background-color: var(--clr-primary);
+     margin-left: auto;
+     margin-right: auto;
+     border-radius: var(--radius);
+ }
+
+ /* global classes for small screen  */
+ .primary-input-sm {
+     height: 20px;
+     margin-left: 15px;
+     padding-left: 15px;
+     border-radius: var(--radius);
+     border: 2px solid var(--clr-primary);
+     letter-spacing: 1px;
+     max-width: 300px;
+
+ }
+
+ .primary-textarea {
+     height: 80px;
+     margin-left: 15px;
+     padding-left: 15px;
+     padding-right: 15px;
+     border-radius: var(--radius);
+     border: 1px solid var(--clr-primary);
+     letter-spacing: 2px;
+     font-family: var(--font-familt-primary);
+     font-size: small;
+     resize: vertical;
+     max-width: 500px;
+ }
+
+ /* all course part names start here for small screen  */
+ /* all course part names start here for small screen  */
+ .all-courses-container {
+     display: block;
+ }
+
+ .all-courses {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .all-courses-title {
+     font-size: 12px;
+     font-weight: bold;
+ }
+
+ .card {
+     max-width: 500px;
+ }
+
+ .card-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, 0.781);
+     display: none;
+     transition: all 3s ease-in-out;
+
+ }
+
+ .card:hover .card-overlay {
+     display: block;
+ }
+
+ .overlay-content {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+ }
+
+ .overlay-text a {
+     color: white;
+     text-decoration: none;
+ }
+
+
+ /* for big screen start here  */
+ @media screen and (min-width:850px) {
+
+
+     .all-courses-title {
+         font-size: 12px;
+         font-weight: bold;
+
+     }
+
+     .all-courses {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .all-courses-container {
+         display: block;
+         margin-top: 100px;
+         margin-bottom: 100px;
+     }
+
+     .card-text {
+         text-align: justify !important;
+     }
+
+     .card {
+         max-width: 500px;
+         height: 570px;
+         margin-top: 20px;
+     }
+
+     .card-overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background-color: rgba(0, 0, 0, 0.781);
+         display: none;
+         transition: all 3.0s ease-in;
+
+     }
+
+     .inter-course:hover .card-overlay {
+         display: block;
+     }
+
+     .overlay-content {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         text-align: center;
+     }
+
+     .overlay-text a {
+         color: white;
+         text-decoration: none;
+     }
+
+
+ }
+
+ /* for big screen end here  */

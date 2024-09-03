@@ -1,0 +1,67 @@
+/* footer styling start here  for small device*/
+.footer-container {
+    background-color: var(--clr-black);
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.footer-links-container .footer-links {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link a {
+    color: var(--clr-white);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.footer-text-copy-right {
+    letter-spacing: 3px;
+}
+
+.footer-social-links-container .social-links-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    outline: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* footer end hear */
+
+/* footer for big devices start here */
+@media screen and (min-width:600px) {
+    .footer-link a {
+        font-size: 16px !important;
+        color: var(--clr-white);
+        text-decoration: none;
+    }
+
+    .footer-links-container .footer-links {
+        display: flex;
+        column-gap: 40px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer {
+        outline: 1px solid white;
+        border-radius: 50%;
+        margin-left: 20px;
+        font-size: 19px;
+    }
+
+    .footer-text-copy-right {
+        font-size: 14px;
+        letter-spacing: 5px;
+    }
+}

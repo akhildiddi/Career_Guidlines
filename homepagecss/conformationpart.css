@@ -1,0 +1,20 @@
+#conformationpart {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#namelbl {
+    font-size: 25px;
+}
+
+#username {
+    height: 25px;
+}
+
+#userbtn {
+    padding: 3px;
+}
+
+#questionlbl {
+    font-size: 25px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* nav-bar staring here */
+        /* nav for small screen  */
+        .nav-container {
+            background-color: var(--clr-black);
+            width: 100%;
+            min-height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-bar {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-self: flex-start;
+            align-items: center;
+        }
+
+        .menu-icon-container {
+            display: flex;
+            justify-self: flex-end;
+            cursor: pointer;
+        }
+
+        .nav-list-container {
+            display: none;
+        }
+
+        .social-links-container {
+            display: none;
+        }
+
+        .menu-icon:hover .nav-container {
+            display: flex;
+        }
+
+        /* navbar styling for big screen  */
+        @media screen and (min-width:760px) {
+            .nav-container {
+                min-height: 70px;
+                top: -70px;
+            }
+
+            .nav-container.sticky-nav {
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+
+            .nav-bar .menu-icon-container {
+                display: none;
+            }
+
+            .nav-bar {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .logo-container {
+                display: flex;
+                justify-self: flex-start;
+                align-items: center;
+                font-size: larger;
+            }
+
+            .nav-list-container {
+                display: flex;
+                justify-self: center;
+                font-size: larger;
+            }
+
+            .nav-links {
+                display: flex;
+                column-gap: 15px;
+            }
+
+            .nav-link a {
+                font-size: larger;
+            }
+
+            .nav-bar .social-links-container {
+                display: flex;
+                justify-self: flex-end;
+            }
+
+            .social {
+                outline: 1px solid white;
+                border-radius: 50%;
+                margin-left: 5px;
+            }
+
+            .nav-link {
+                padding: 5px;
+            }
+
+            .navlink .active {
+                background-color: var(--clr-white) !important;
+                color: black !important;
+            }
+
+            .nav-link a:hover {
+                background-color: var(--clr-white);
+                color: black !important;
+                transition: var(--transition);
+            }
+
+            .social:hover {
+                font-size: large;
+                transition: var(--transition);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar starting -->
+    <nav class=" container-fluid nav-container sticky-nav">
+        <div class="nav-bar wrapper">
+
+            <div class="logo-container">
+                <i class="fa-solid fa-stairs text-white fa-3x"></i><span class="text-white">Career Guidlines</span>
+            </div>
+
+            <div class="menu-icon-container">
+                <i class="fa-solid fa-bars menu-icon text-white fa-2x"></i>
+            </div>
+
+            <div class="nav-list-container">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="hompage.html" class="btn text-white active">Home</a></li>
+                    <li class="nav-link"> <a href="Courses.html" class="btn text-white">Courses</a></li>
+                    <li class="nav-link"><a href="jobs.html" class="btn text-white">Jobs</a></li>
+                    <li class="nav-link"><a href="contactus.html" class="btn text-white">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="social-links-container">
+                <ul class="social-links">
+                    <li class="insta-link btn social"><i class="fa-brands fa-instagram text-white "></i></li>
+                    <li class="fb-link btn social"><i class="fa-brands fa-facebook-f text-white "></i></li>
+                    <li class="twitter-link btn social"><i class="fa-brands fa-twitter text-white "></i></li>
+                    <li class="youtube-link btn social"><i class="fa-brands fa-youtube text-white "></i></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- navbar ending -->
+</body>
+
+</html>

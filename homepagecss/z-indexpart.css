@@ -1,0 +1,174 @@
+/* z-index part for small screen start here */
+@media screen and (max-width:600px) {
+    #z-indexpart {
+        background-color: blanchedalmond;
+        padding: 50px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        display: none;
+    }
+
+    .z-indexpart-container {
+        position: relative;
+        height: 500px;
+        box-sizing: border-box;
+        margin-top: 50px;
+    }
+
+    .z-index-imgpart {
+        float: left;
+    }
+
+    .z-part-img {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+    }
+
+    .z-part-img1 {
+        position: absolute;
+        left: 2px;
+        z-index: 1;
+    }
+
+    .z-part-img2 {
+        position: absolute;
+        left: 70px;
+        top: 80px;
+        z-index: 3;
+    }
+
+    .z-part-img3 {
+        position: absolute;
+        left: opx;
+        top: 200px;
+        z-index: 2;
+    }
+
+    .z-part-img1:hover {
+        z-index: 4;
+        height: 150px;
+        width: 200px;
+    }
+
+    .z-part-img2:hover {
+        z-index: 5;
+        height: 150px;
+        width: 200px;
+    }
+
+    .z-part-img3:hover {
+        z-index: 6;
+        height: 150px;
+        width: 200px;
+    }
+}
+
+/* z-index part for small screen end here  */
+
+/* z-index part for medium screen start here  */
+@media screen and (min-width:601px) and (max-width:849px) {
+    .text-about-site {
+        background-color: blanchedalmond;
+        text-align: center;
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    #z-indexpart {
+        display: block;
+    }
+
+    .z-index-imgpart {
+        display: none;
+    }
+}
+
+/* z-index part for medium screen end here  */
+
+
+/* z-index part for big screen start here  */
+@media screen and (min-width:850px) {
+    #z-indexpart {
+        background-color: blanchedalmond;
+        padding: 50px;
+        box-sizing: border-box;
+        margin-top: 100px;
+    }
+
+    .z-indexpart-container {
+
+        height: 800px;
+        box-sizing: border-box;
+        margin-top: 50px;
+    }
+
+    .z-index-imgpart {
+        float: left;
+        max-width: 50%;
+        margin-left: 30px;
+        position: relative;
+    }
+
+    .z-part-img {
+        height: 250px;
+        width: 300px;
+        position: absolute;
+    }
+
+    .z-part-img1 {
+        position: absolute;
+        left: 2px;
+        z-index: 1;
+    }
+
+    .z-part-img2 {
+        position: absolute;
+        left: 150px;
+        top: 150px;
+        z-index: 3;
+    }
+
+    .z-part-img3 {
+        position: absolute;
+        left: 2px;
+        top: 350px;
+        z-index: 2;
+    }
+
+    .z-part-img1:hover {
+        z-index: 4;
+        height: 250px;
+        width: 500px;
+    }
+
+    .z-part-img2:hover {
+        z-index: 5;
+        height: 250px;
+        width: 500px;
+    }
+
+    .z-part-img3:hover {
+        z-index: 6;
+        height: 250px;
+        width: 500px;
+    }
+
+    #why {
+        margin-bottom: 20px;
+    }
+
+    .text-about-site {
+        float: right;
+        max-width: 50%;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+
+}
+
+/* z-index part for big screen end here  */
